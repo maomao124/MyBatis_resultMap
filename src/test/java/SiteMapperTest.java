@@ -24,9 +24,15 @@ import static org.junit.jupiter.api.Assertions.*;
  * Description(描述)： 测试类
  */
 
+
 class SiteMapperTest
 {
 
+    /**
+     * Select site.
+     *
+     * @throws IOException the io exception
+     */
     @Test
     void selectSite() throws IOException
     {
@@ -52,6 +58,11 @@ class SiteMapperTest
         sqlSession.close();
     }
 
+    /**
+     * Select site 1.
+     *
+     * @throws IOException the io exception
+     */
     @Test
     void selectSite1() throws IOException
     {

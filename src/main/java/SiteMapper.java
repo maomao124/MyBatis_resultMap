@@ -14,10 +14,21 @@ import java.util.Map;
  * Description(描述)： 无
  */
 
+
 public interface SiteMapper
 {
+    /**
+     * Select site list.
+     *
+     * @return the list
+     */
     @SuppressWarnings("all")
     public List<Map<String, Object>> selectSite();
 
+    /**
+     * Select site 1 list.
+     *
+     * @return the list
+     */
     public List<Site> selectSite1();
 }
