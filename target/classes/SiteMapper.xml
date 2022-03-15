@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="SiteMapper">
+
+    <select id="selectSite" resultType="map">
+        select *
+        from website
+    </select>
+
+
+    <resultMap id="selectSite1" type="Site">
+        <id property="id" column="id"/>
+        <result property="name1" column="name"/>
+        <result property="age" column="age"/>
+        <result property="url" column="url"/>
+        <result property="country" column="country"/>
+        <result property="createTime" column="createTime"/>
+    </resultMap>
+
+    <select id="selectSite1" resultMap="selectSite1">
+        select *
+        from website
+    </select>
+</mapper>
